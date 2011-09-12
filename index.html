@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Rabid - A Rapid Prototyping Toolkit</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+        <script src="js/handlebars.1.0.0.beta.3.js"></script>
+        <script src="js/rabid.js"></script>
+        <script>
+            /* Our simple Rabid config */
+            var comp_path = 'components/';
+            var cont_path = 'content/';
+        </script>
+
+        <link rel="stylesheet" href="css/rabid.css" media="screen">
+
+    </head>
+    <body>
+        <div class="linklist-names nav"></div>
+        <div class="linklist-names nav"></div>
+        <div class="linklist-names nav"></div>
+
+        <script>
+            $(function() {
+                comp('linklist', 'names');
+            });
+        </script>
+    </body>
+</html>

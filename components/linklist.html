@@ -1,0 +1,12 @@
+{{#if heading}}
+<h2>{{heading}}</h2>
+{{/if}}
+<ul>
+    {{#list}}
+    {{#if url}}
+        <li><a href="{{url}}">{{item}}</a></li>
+    {{else}}
+        <li>{{item}}</li>
+    {{/if}}
+    {{/list}}
+</ul>
