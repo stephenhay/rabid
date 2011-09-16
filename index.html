@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
+<html dir="ltr" lang="nl">
 
-        <title>Rabid - A Rapid Prototyping Toolkit</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
-        <script src="js/handlebars.1.0.0.beta.3.js"></script>
-        <script src="js/rabid.js"></script>
-        <script>
-            /* Our simple Rabid config */
-            var comp_path = 'components/';
-            var cont_path = 'content/';
-        </script>
+	<head>
+		<meta charset="utf-8" />
+		<title>Rabid</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5;">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="js/handlebars.1.0.0.beta.3.js"></script>
+		<script type="text/javascript" src="rabid/js/rabid.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</head>
 
-        <link rel="stylesheet" href="css/rabid.css" media="screen">
+	<body>
 
-    </head>
-    <body>
-        <div class="linklist-names nav"></div>
-        <div class="linklist-names nav"></div>
-        <div class="linklist-names nav"></div>
+		<header>
+			<div id="header" class="container rabid-region-header"></div>
+		</header>
 
-        <script>
-            $(function() {
-                comp('linklist', 'names');
-            });
-        </script>
-    </body>
+		<div id="main">
+			<div class="container">
+				<article id="article" class="rabid-region-article"></article>
+				<aside id="aside" class="rabid-region-aside"></aside>
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer" class="container rabid-region-footer"></div>
+		</footer>
+
+	</body>
 </html>

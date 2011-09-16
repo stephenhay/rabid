@@ -1,0 +1,56 @@
+body {
+	background-color: #fff;
+	color: #000;
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 960px;
+	}
+
+#article {
+	position: relative;
+	float: left;
+	left: 100%;
+	margin-left: -100%;
+	width: 60%;
+	}
+#aside {
+	position: relative;
+	float: left;
+	left: 100%;
+	margin-left: -36%;
+	width: 36%;
+	}
+
+
+
+.active {
+	background-color: #ff9;
+	}
+
+
+
+/* type */
+h1 {
+	font-size: 2em;
+	line-height: 1.0;
+	}
+h2 {
+	font-size: 1.5em;
+	line-height: 1.0;
+	}
+h3 {
+	font-size: 1em;
+	line-height: 1.5;
+	}
+#article .rabid-image {
+	float: right;
+	margin: 0 0 20px 20px;
+	}
