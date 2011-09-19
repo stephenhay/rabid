@@ -1,3 +1,5 @@
+/*Todo: add reset*/
+
 body {
 	background-color: #fff;
 	color: #000;
@@ -12,6 +14,7 @@ body {
 	overflow: hidden;
 	margin: 0 auto;
 	max-width: 960px;
+    border: 1px solid silver; /* Wireframe-ish :P */
 	}
 
 #article {
@@ -29,13 +32,9 @@ body {
 	width: 36%;
 	}
 
-
-
 .active {
 	background-color: #ff9;
 	}
-
-
 
 /* type */
 h1 {
@@ -54,3 +53,26 @@ h3 {
 	float: right;
 	margin: 0 0 20px 20px;
 	}
+
+/* nav */
+#rabid-nav {
+    background-color: silver;
+    }
+    #rabid-nav li {
+        display: inline-block;
+        padding: .3em;
+        }
+
+/* tables */
+table {
+    text-align: left;
+    border-top: 1px solid gray;
+    }
+table, th {
+    border-bottom: 1px solid gray;
+    }
+    td, th {
+        padding: .3em;
+        }
+
+

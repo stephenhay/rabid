@@ -1,0 +1,17 @@
+<table summary="People and their URLs">
+    {{#if heading}}
+    <caption>{{heading}}</caption>
+    {{/if}}
+    <thead>
+        <tr><th scope="col">Naam</th><th scope="col"><abbr>URL</abbr></th></tr>
+    </thead>
+    <tbody>
+    {{#list}}
+    {{#if url}}
+        <tr><td>{{item}}</td><td><a href="{{url}}">{{url}}</a></td></tr>
+    {{else}}
+        <tr><td>{{item}}</td><td>n.v.t.</td></tr>
+    {{/if}}
+    {{/list}}
+    </tbody>
+</table>
