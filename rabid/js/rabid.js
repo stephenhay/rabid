@@ -19,7 +19,7 @@ var rabid = {
 	pages: {},
 	currentpage: '',
 	settings: {
-		hashbang: '#!/',
+		hashbang: '!/',
 		path: 'rabid'
 	},
 
@@ -28,7 +28,7 @@ var rabid = {
 	**/
 	init: function(pages) {
 		this.pages = (pages) ? pages : {};
-		var page = document.location.hash.replace(this.settings.hashbang, '');
+		var page = document.location.hash.replace('#' + this.settings.hashbang, '');
 		this.initLinks();
 		this.loadPage(page);
 	},
@@ -37,7 +37,6 @@ var rabid = {
 	Load Rabid page
 	**/
 	loadPage: function(ref) {
-		var _this = this;
 		if (!ref) { // if no ref is set, find the first page
 			for (var page in this.pages) {
 				if (this.pages.hasOwnProperty(page)) {
@@ -46,7 +45,7 @@ var rabid = {
 				}
 			}
 		}
-		window.location.hash = this.settings.hashbang + ref;
+		window.location.hash = '#' + this.settings.hashbang + ref;
 		$('body').removeClass(this.currentpage).addClass(ref);
 		this.currentpage = ref;
 		for (var region in this.pages[ref]) { // walk through regions in this page
@@ -71,7 +70,9 @@ var rabid = {
 		var _this = this;
 		$('body a.rabid').live('click', function(event){
 			event.preventDefault();
-			_this.loadPage($(this).attr("href"));
+			var hrefArr = $(this).attr('href').split('/'); // IE7 returns full path instead of just the href attribute
+			var href = hrefArr[hrefArr.length-1];
+			_this.loadPage(href);
 		});
 	},
 
