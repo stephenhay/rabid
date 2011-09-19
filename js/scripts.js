@@ -31,7 +31,6 @@ var pages = {
 	article: {
 		article: [
 			'<h1>Nieuwsbericht</h1>',
-            rabid.comp('table', team),
 			rabid.image(200, 150),
 			rabid.lipsum(3),
 			rabid.list(3),

@@ -17,20 +17,22 @@ body {
     border: 1px solid silver; /* Wireframe-ish :P */
 	}
 
-#article {
-	position: relative;
-	float: left;
-	left: 100%;
-	margin-left: -100%;
-	width: 60%;
-	}
-#aside {
-	position: relative;
-	float: left;
-	left: 100%;
-	margin-left: -36%;
-	width: 36%;
-	}
+@media only screen and (min-width: 600px) {
+    #article {
+        position: relative;
+        float: left;
+        left: 100%;
+        margin-left: -100%;
+        width: 60%;
+        }
+    #aside {
+        position: relative;
+        float: left;
+        left: 100%;
+        margin-left: -36%;
+        width: 36%;
+        }
+}
 
 .active {
 	background-color: #ff9;
