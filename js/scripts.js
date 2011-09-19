@@ -1,6 +1,3 @@
-
-
-
 // define templates for re-use
 
 var team = {
@@ -15,8 +12,6 @@ var team = {
 };
 var header = '{{nav}}';
 var footer = '<p>[Footer]</p>';
-
-
 
 // define regions & pages
 
@@ -46,8 +41,6 @@ var pages = {
 		footer: footer
 	}
 }
-
-
 
 $(document).ready(function(){
 	rabid.init(pages);
