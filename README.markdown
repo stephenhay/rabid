@@ -15,6 +15,10 @@ We are planning on adding as many templates, helper functions and styles as nece
 
 ## Quick Start (coming soon)
 
+## Dependencies
+
+Rabid depends on jQuery (http://jquery.com). If you want to take advantage of Mustache templating, you'll want Handlebars.js (http://www.handlebarsjs.com/).
+
 ## Caveats
 
 Rabid is meant to be a design/wireframing/prototyping tool, and as such is not intended to be used for production sites. It does not need to work everywhere. It will have bugs. It is in progress. Hashbangs are killing the Web. Kittens are dying. You get the idea.
@@ -23,7 +27,7 @@ Due to Javascript permissions in some browsers, you may need to install Rabid on
 
 ## Contributors
 
-Rabid is brainchild of Stephen Hay (http://twitter.com/stephenhay) and Michiel Jelijs (http://twitter.com/mjelijs, who tired of spending time doing things outside of the browser, only to have to redo them inside the browser. We have computers to make things easier, someone said.
+Rabid is brainchild of Stephen Hay (http://twitter.com/stephenhay) and Michiel Jelijs (http://twitter.com/mjelijs), who tired of spending time doing things outside of the browser, only to have to redo them inside the browser. We have computers to make things easier, someone said.
 
 ## License
 
