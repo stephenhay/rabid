@@ -27,7 +27,7 @@ Due to Javascript permissions in some browsers, you may need to install Rabid on
 
 ## Contributors
 
-Rabid is brainchild of Stephen Hay (http://twitter.com/stephenhay) and Michiel Jelijs (http://twitter.com/mjelijs), who tired of spending time doing things outside of the browser, only to have to redo them inside the browser. We have computers to make things easier, someone said.
+Rabid is brainchild of Stephen Hay (http://twitter.com/stephenhay) and Michiel Jelijs (http://twitter.com/michielj), who tired of spending time doing things outside of the browser, only to have to redo them inside the browser. We have computers to make things easier, someone said.
 
 ## License
 
