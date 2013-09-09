@@ -31,4 +31,4 @@ Rabid is brainchild of Stephen Hay (http://twitter.com/stephenhay) and Michiel J
 
 ## License
 
-Rabid is released under the MIT license.
+Rabid is released under the MIT license: http://stephenhay.mit-license.org/.
